@@ -1,0 +1,21 @@
+.two-columns {
+    display: flex;
+    gap: 20px; /* Adjust the gap as needed */
+}
+
+/* Increase font size for all normal text */
+li {
+    font-size: 1.1em;
+}
+
+/* Increase font size for all normal text */
+.line, .slidev-code-highlighted {
+    font-size: 1.2em;
+}
+
+.red-background {
+    color: white;
+    background-color: rgb(200,25,25);
+}
+
+/* pre > span */
