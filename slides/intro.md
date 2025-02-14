@@ -10,3 +10,8 @@
 | 2009-2010            | Post-doc, Institute for Computational Engineering and Sciences, University of Texas |
 | 2010-2019            | Assistant professor at Eindhoven University of Technology                           |
 | 2019-present         | Associate professor at Eindhoven University of Technology                           |
+
+---
+layout: image
+image: ./images/languages.svg
+---

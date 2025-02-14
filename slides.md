@@ -52,10 +52,10 @@ layout: center
 class: red-background
 ---
 
-# Pandas - Python Data Analysis Library
+# Data Analysis using Python
 
 ---
-src: ./slides/pandas.md
+src: ./slides/data.md
 ---
 
 <!-- slides imported from pandas.md -->
@@ -72,6 +72,19 @@ src: ./slides/numpy.md
 ---
 
 <!-- slides imported from numpy.md -->
+
+---
+layout: center
+class: red-background
+---
+
+# MatplotLib
+
+---
+src: ./slides/plots.md
+---
+
+<!-- slides imported from plots.md -->
 
 ---
 layout: center
