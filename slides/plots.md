@@ -148,7 +148,7 @@ layout: two-cols
 &nbsp;
 
 <div class="flex justify-center">
-  <img src="/images/plot_v.png" alt="v1" width="500" v-if="$slidev.nav.clicks === 0">
+  <img src="/images/plot_v2.png" alt="v1" width="500" v-if="$slidev.nav.clicks === 0">
 </div>
 
 <div class="flex justify-center">
