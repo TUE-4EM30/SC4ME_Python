@@ -6,6 +6,9 @@ url: https://www.youtube.com/embed/ZTPrbAKmcdo
 <!-- Youtube video on evolution of programming languages 1958-2025 -->
 
 ---
+layout: image-right
+image: images/vanrossum.jpg
+---
 
 ## Timeline
 
@@ -18,41 +21,19 @@ descendant of ABC
 - **2024** Latest (stable) release: Python 3.13 
 
 ---
-
-## Characteristics
-
-- Main characteristics (original slide 12)
-
+layout: image-right
+image: images/python.svg
 ---
 
-```py {*|2|16}
-In [1]: import this
-The Zen of Python, by Tim Peters
+## A fourth generation language (4GLs)
 
-Beautiful is better than ugly.
-Explicit is better than implicit.
-Simple is better than complex.
-Complex is better than complicated.
-Flat is better than nested.
-Sparse is better than dense.
-Readability counts.
-Special cases aren't special enough to break the rules.
-Although practicality beats purity.
-Errors should never pass silently.
-Unless explicitly silenced.
-In the face of ambiguity, refuse the temptation to guess.
-There should be one-- and preferably only one --obvious way to do it.
-Although that way may not be obvious at first unless you're Dutch.
-Now is better than never.
-Although never is often better than *right* now.
-If the implementation is hard to explain, it's a bad idea.
-If the implementation is easy to explain, it may be a good idea.
-Namespaces are one honking great idea -- let's do more of those!
-```
-
----
-
-## PEP8
+- High-level abstraction
+- Ease of use and readability
+- Rapid development: 
+    - Built-in functionality
+    - No compilation
+    - Platform independent
+- Extensive libraries and frameworks
 
 ---
 layout: two-cols
@@ -108,3 +89,129 @@ $ python pythagoras.py
 - For executing a real program
 
 </v-click>
+
+---
+
+```python {*|1,2|10,16}
+In [1]: import this
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+```
+
+---
+layout: two-cols
+---
+
+## Stimulating readability
+
+````md magic-move
+```py
+import math
+
+a_list = [1,2,3]
+b_list = [4,5,6]
+
+for i in range(3):
+    for j in range(3):
+        a = a_list[i]
+        b = b_list[j]
+        c = math.sqrt(a**2+b**2)
+      print(f'{a}²+{b}²={c:4.3f}²')
+```
+```py
+import math
+
+a_list = [1,2,3]
+b_list = [4,5,6]
+
+for i in range(3):
+    for j in range(3):
+        a = a_list[i]
+        b = b_list[j]
+        c = math.sqrt(a**2+b**2)
+        print(f'{a}²+{b}²={c:4.3f}²')
+```
+```py
+import math
+
+a_list = [1,2,3]
+b_list = [4,5,6]
+
+for a in a_list:
+    for b in b_list:
+        c = math.sqrt(a**2+b**2)
+        print(f'{a}²+{b}²={c:4.3f}²')
+```
+```py
+import math
+
+a_list = [1, 2, 3]
+b_list = [4, 5, 6]
+
+for a in a_list:
+    for b in b_list:
+        c = math.sqrt(a**2 + b**2)
+        print(f'{a}² + {b}² = {c:4.3f}²')
+```
+````
+
+::right::
+
+## &nbsp;
+
+- White space matters!
+
+```console {lines=false}
+  File "<stdin>", line 11
+    print(f'{a}²+{b}²={c:4.3f}²')
+                                 ^
+IndentationError: unindent does not 
+match any outer indentation level
+```
+
+<v-click at=1>
+
+- Consistent indentation enforced
+
+</v-click>
+
+<v-click at=2>
+
+- Iterate values, not indices
+
+</v-click>
+
+<v-click at=3>
+
+- Style recommendations (PEP8):
+    - Add spaces after each comma in list
+    - Add spaces around operators
+    - ...
+
+</v-click>
+
+---
+layout: iframe
+url: https://peps.python.org/pep-0008
+---
+
+<!-- PEP8 website -->
