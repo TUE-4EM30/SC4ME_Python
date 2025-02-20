@@ -25,7 +25,7 @@ b = numpy.array([1,3,5,7])
 In [1]: a.shape
 Out [1]: (3,)
 
-In [2]: a.sum
+In [2]: a.sum()
 Out [2]: 10
 
 In [3]: a+1
@@ -47,55 +47,93 @@ Out [7]: #(4x4 matrix)
 
 ---
 layout: two-cols
-class: large-python-slide
+class: large-python-motion
 ---
 
-## Relevant functions
+## Application to the energy sources
 
 Pandas use NumPy to allow for fast row and column operations
 
-```python
+````md magic-move {at:1}
+<<< @/snippets/numpy_index_v1.py python {1-3}
+<<< @/snippets/numpy_index_v1_5.py python {4,5}
+<<< @/snippets/numpy_index_v2.py python {4-11}
+<<< @/snippets/numpy_index_v3.py python {4,5}
+````
 
-Per_person = []
-for country in df['Country']:
-    Per_person.append(df.loc[country,'Total'] / df.loc[country,'Population'])
-
-import numpy
-Per_person = df['Total']/df['Population']
-
-```
+<div class="flex justify-center">
+  <img src="/images/plot_v1.png" alt="v1" width="400" v-if="$slidev.nav.clicks === 0">
+</div>
 
 ::right::
 
 &nbsp;
-<!-- alter table based on the commands -->
 
-```console {lines:false}
-       Country   Total   Population
-0  Afghanistan    0.70    41128772
-1      Albania    7.00     2842318
-2      Algeria    0.68    44903228
-3    Argentina   45.94    35588996
-...
-191    Vietnam  130.37    98186856
-192      Yemen    0.60    33696612
-193     Zambia   17.23    20017670
-194   Zimbabwe    5.92    16320539
+````md magic-move {at:1}
+<<< @/snippets/numpy_table_v1.py console 
+<<< @/snippets/numpy_table_v2.py console 
+<<< @/snippets/numpy_table_v3.py console 
+<<< @/snippets/numpy_table_v3.py console 
+````
 
-[195 rows x 2 columns]
-```
+---
+layout: two-cols
+class: large-python-motion
+---
 
+## Application to the energy sources
+
+### $p = c(y-y_0)^a$
+
+````md magic-move
+<<< @/snippets/numpy_v0.py python 
+<<< @/snippets/numpy_v1.py python {1}
+<<< @/snippets/numpy_v2.py python {3}
+````
+
+<br>
+
+````md magic-move
+<<< @/snippets/numpy_v.py python 
+<<< @/snippets/numpy_v4.py python 
+<<< @/snippets/numpy_v5.py python {1-4,7}
+<<< @/snippets/numpy_v6.py python {4-10}
+````
+
+::right::
+
+&nbsp;
+
+<div class="flex justify-center">
+  <img src="/images/plot_log.png" alt="log" width="300" v-if="$slidev.nav.clicks === 0">
+</div>
+
+<div class="flex justify-center">
+  <img src="/images/plot_log_1995.png" alt="log" width="300" v-if="$slidev.nav.clicks === 1">
+</div>
+
+<div class="flex justify-center">
+  <img src="/images/plot_log_1995_noyear.png" alt="log" width="300" v-if="$slidev.nav.clicks >= 2">
+</div>
+
+<div class="flex justify-center">
+  <img src="/images/plot_log_diff.png" alt="log_diff" width="300" v-if="$slidev.nav.clicks === 3">
+</div>
+
+<div class="flex justify-center">
+  <img src="/images/plot_log_diff_filter.png" alt="log_diff" width="300" v-if="$slidev.nav.clicks === 4">
+</div>
+
+<div class="flex justify-center">
+  <img src="/images/plot_log_1995_noyear_fit.png" alt="log_diff" width="300" v-if="$slidev.nav.clicks === 5">
+</div>
 ---
 layout: two-cols
 ---
 
-## Application to the problem
+## Optimization / vectorization
 
 - Significant time profit for large lists
-
-::right::
-
-&nbsp;
 
 ```py
 # by hand
@@ -118,11 +156,9 @@ array = numpy.arange(100000000)
 mean = numpy.mean(array)
 ```
 
----
+::right::
 
-## Optimization / vectorization
-
-- From list to numpy array + explain vectorization (original lecture 7 slides)
+&nbsp;
 
 ```python
 arr = np.array([1, 2, 3, 4, 5])

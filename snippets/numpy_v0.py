@@ -1,0 +1,1 @@
+plt.semilogy(df['year'], df['Wind'])
