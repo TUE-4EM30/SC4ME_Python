@@ -117,7 +117,7 @@ layout: two-cols
 </div>
 
 <div class="flex justify-center">
-  <img src="./images/matplotliblogo.png" alt="matplotlib" width="300" v-if="$slidev.nav.clicks === 3">
+  <img src="./images/Matplotliblogo.png" alt="matplotlib" width="300" v-if="$slidev.nav.clicks === 3">
 </div>
 
 <div class="flex justify-center">
