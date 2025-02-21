@@ -13,5 +13,5 @@
 
 ---
 layout: image
-image: /images/languages.svg
+image: ./images/languages.svg
 ---
