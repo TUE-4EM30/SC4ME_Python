@@ -6,11 +6,12 @@ url: https://www.youtube.com/embed/ZTPrbAKmcdo
 <!-- Youtube video on evolution of programming languages 1958-2025 -->
 
 ---
-layout: image-right
-image: /images/vanrossum.jpg
+layout: two-cols-header
 ---
 
 ## Python's timeline
+
+::left::
 
 - **1989** Dutchy Guido van Rossum developed Python at CWI as a
 descendant of ABC
@@ -20,12 +21,19 @@ descendant of ABC
 - **2008** Release of Python 3.0
 - **2024** Latest release: Python 3.13 
 
+::right::
+
+<div class="flex justify-center">
+  <img src="/images/vanrossum.jpg" width="300">
+</div>
+
 ---
-layout: image-right
-image: /images/python.svg
+layout: two-cols-header
 ---
 
 ## A fourth generation language (4GLs)
+
+::left::
 
 - High-level abstraction
 - Ease of use and readability
@@ -34,6 +42,12 @@ image: /images/python.svg
     - No compilation
     - Platform independent
 - Extensive libraries and frameworks
+
+::right::
+
+<div class="flex justify-center">
+  <img src="/images/python.svg" width="600">
+</div>
 
 ---
 layout: two-cols

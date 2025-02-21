@@ -230,11 +230,10 @@ class: red-background
 # Python & VSCode
 
 ---
-layout: image
-image: /images/VSCode.png
----
 
-<!-- VSCode image -->
+<div class="flex justify-center">
+  <img src="/images/VSCode.png" width="1200">
+</div>
 
 ---
 

@@ -12,6 +12,7 @@
 | 2019-present         | Associate professor at Eindhoven University of Technology                           |
 
 ---
-layout: image
-image: ../images/languages.svg
----
+
+<div class="flex justify-center">
+  <img src="/images/languages.svg" width="1200">
+</div>

@@ -89,11 +89,10 @@ hideInToc: true
 # An example to explore built-in objects 
 
 ---
-layout: image
-image: /images/f1champs.png
----
 
-<!--Image with all F1 champions until 2024-->
+<div class="flex justify-center">
+  <img src="/images/f1champs.png" width="800">
+</div>
 
 ---
 layout: two-cols
@@ -261,13 +260,20 @@ for champion in champions:
 </v-click>
 
 ---
-layout: image-right
-image: /images/smalltalk.png
+layout: two-cols-header
 ---
 
 ## Xerox PARC and Smalltalk
+
+::left::
 
 - **1970**: Printing company Xerox sets up a research center in Silicon Valley (Palo Alto Research Center)
 - **1970s**: Development of Graphical User Interface (GUI) for Xerox Alto (1973)
 - **1972**: Alan Kay and coworkers develop the first fully-formed *object oriented programming language*: SmallTalk
 - **Today**: Independent technological development center
+
+::right::
+
+<div class="flex justify-center">
+  <img src="/images/smalltalk.png" width="350">
+</div>
