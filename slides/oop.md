@@ -90,7 +90,7 @@ hideInToc: true
 
 ---
 layout: image
-image: images/f1champs.png
+image: /images/f1champs.png
 ---
 
 <!--Image with all F1 champions until 2024-->
@@ -262,7 +262,7 @@ for champion in champions:
 
 ---
 layout: image-right
-image: images/smalltalk.png
+image: /images/smalltalk.png
 ---
 
 ## Xerox PARC and Smalltalk

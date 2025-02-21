@@ -7,7 +7,7 @@ url: https://www.youtube.com/embed/ZTPrbAKmcdo
 
 ---
 layout: image-right
-image: images/vanrossum.jpg
+image: /images/vanrossum.jpg
 ---
 
 ## Python's timeline
@@ -22,7 +22,7 @@ descendant of ABC
 
 ---
 layout: image-right
-image: images/python.svg
+image: /images/python.svg
 ---
 
 ## A fourth generation language (4GLs)

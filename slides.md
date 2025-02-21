@@ -109,39 +109,39 @@ layout: two-cols
 &nbsp;
 
 <div class="flex justify-center">
-  <img src="./images/Numpylogo.png" alt="numpy" width="300" v-if="$slidev.nav.clicks === 1">
+  <img src="/images/Numpylogo.png" alt="numpy" width="300" v-if="$slidev.nav.clicks === 1">
 </div>
 
 <div class="flex justify-center">
-  <img src="./images/Pandalogo.png" alt="pandas" width="300" v-if="$slidev.nav.clicks === 2">
+  <img src="/images/Pandalogo.png" alt="pandas" width="300" v-if="$slidev.nav.clicks === 2">
 </div>
 
 <div class="flex justify-center">
-  <img src="./images/Matplotliblogo.png" alt="matplotlib" width="300" v-if="$slidev.nav.clicks === 3">
+  <img src="/images/Matplotliblogo.png" alt="matplotlib" width="300" v-if="$slidev.nav.clicks === 3">
 </div>
 
 <div class="flex justify-center">
-  <img src="./images/scipylogo.jpg" alt="scipy" width="300" v-if="$slidev.nav.clicks === 4">
+  <img src="/images/scipylogo.jpg" alt="scipy" width="300" v-if="$slidev.nav.clicks === 4">
 </div>
 
 <div class="flex justify-center">
-  <img src="./images/skikitlogo.png" alt="Scikit-learn" width="300" v-if="$slidev.nav.clicks === 5">
+  <img src="/images/skikitlogo.png" alt="Scikit-learn" width="300" v-if="$slidev.nav.clicks === 5">
 </div>
 
 <div class="flex justify-center">
-  <img src="./images/tensorflowlogo.png" alt="tensorflow" width="300" v-if="$slidev.nav.clicks === 6">
+  <img src="/images/tensorflowlogo.png" alt="tensorflow" width="300" v-if="$slidev.nav.clicks === 6">
 </div>
 
 <div class="flex justify-center">
-  <img src="./images/keraslogo.png" alt="keras" width="300" v-if="$slidev.nav.clicks === 7">
+  <img src="/images/keraslogo.png" alt="keras" width="300" v-if="$slidev.nav.clicks === 7">
 </div>
 
 <div class="flex justify-center">
-  <img src="./images/pytorchlogo.png" alt="pytorch" width="300" v-if="$slidev.nav.clicks === 8">
+  <img src="/images/pytorchlogo.png" alt="pytorch" width="300" v-if="$slidev.nav.clicks === 8">
 </div>
 
 <div class="flex justify-center">
-  <img src="./images/flasklogo.png" alt="flask" width="300" v-if="$slidev.nav.clicks === 9">
+  <img src="/images/flasklogo.png" alt="flask" width="300" v-if="$slidev.nav.clicks === 9">
 </div>
 
 <!-- add snipped of the different libraries -->
@@ -230,11 +230,11 @@ class: red-background
 # Python & VSCode
 
 ---
-layout: iframe
-url: http://code.visualstudio.com/docs/python/python-tutorial
+layout: image
+image: /images/VSCode.png
 ---
 
-<!-- Python VSCode tutorial -->
+<!-- VSCode image -->
 
 ---
 
