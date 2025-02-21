@@ -2,15 +2,15 @@
 layout: two-cols
 ---
 
-## Intro to MatplotLib
+## Hello MatplotLib!
 
 ```python
 import matplotlib.pyplot as plt
-import numpy as np
+import numpy
 
 # Create data
-x = np.linspace(0, 10, 100)
-y = np.sin(x)
+x = numpy.linspace(0, 10, 100)
+y = numpy.sin(x)
 
 plt.plot(x, y)
 
@@ -18,7 +18,6 @@ plt.title('Sine Wave')
 plt.xlabel('X axis')
 plt.ylabel('Y axis')
 
-# Show the plot
 plt.show()
 ```
 ::right::
@@ -40,17 +39,19 @@ plt.show()
 layout: two-cols
 ---
 
-## Different plotting methods
+## Plotting modes
+
+### MATLAB-like plotting
 
 ```python
 import matplotlib.pyplot as plt
 import pandas as pd
-import numpy as np
+import numpy.random
 
 # Create sample DataFrame
 df = pd.DataFrame({
-    'x': np.random.rand(50),
-    'y': np.random.rand(50)
+    'x': numpy.random.rand(50),
+    'y': numpy.random.rand(50)
 })
 
 # Create scatter plot using Pyplot API
@@ -63,12 +64,20 @@ plt.show()
 
 ::right::
 
-&nbsp;
+## &nbsp;
+
+### OOP-like plotting
 
 ```python
 import matplotlib.pyplot as plt
 import pandas as pd
-import numpy as np
+import numpy.random
+
+# Create sample DataFrame
+df = pd.DataFrame({
+    'x': numpy.random.rand(50),
+    'y': numpy.random.rand(50)
+})
 
 fig, ax = plt.subplots(figsize=(6, 4))  # Create figure and axes
 ax.scatter(df['x'], df['y'], color='red', marker='x')
@@ -83,10 +92,9 @@ plt.show()
 
 ---
 layout: two-cols
-class: large-python-motion
 ---
 
-## Application to the energy sources
+## Wind energy in NL
 
 ````md magic-move {at:1}
 <<< @/snippets/matplotlib_index_v1.py python {1-2}
@@ -94,6 +102,9 @@ class: large-python-motion
 <<< @/snippets/matplotlib_index_v2.py python {6-9}
 <<< @/snippets/matplotlib_index_v3.py python {4-6,13-17}
 ````
+
+<v-click hide>
+
 
 ```console {lines:false}
      Country      year   Wind  Solar  Nuclear  Hydro
@@ -112,10 +123,13 @@ class: large-python-motion
 [124 rows x 6 columns]
 ```
 
+</v-click >
 
 ::right::
 
-&nbsp;
+## &nbsp;
+
+<v-click at=1>
 
 <div class="flex justify-center">
   <img src="/images/plot_v1.png" alt="v1" width="500" v-if="$slidev.nav.clicks === 1">
@@ -128,18 +142,21 @@ class: large-python-motion
 <div class="flex justify-center">
   <img src="/images/plot_v3.png" alt="v3" width="500" v-if="$slidev.nav.clicks === 3">
 </div>
+</v-click>
 
 ---
 layout: two-cols
 ---
 
-## Application to the energy sources
+## Wind energy in NL
 
 - Can we find a relation in the yearly increase?
 
 <v-click>
 
-- In the logaritmic plot suggests so
+- The `pyplot.semilogy` plot suggests a relation of the form $p = c(y-y_0)^a$.
+
+- What are the values of $c$ and $a$?
 
 </v-click>
 

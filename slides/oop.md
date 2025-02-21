@@ -51,21 +51,27 @@ pip install fibonacci
 layout: two-cols-header
 ---
 
-## Object-Oriented programming
+## Object-Oriented Programming (OOP)
 
-OOP is a programming paradigm based on *objects*, which are *abstract data structures* containing:
+## &nbsp;
+
+### OOP is a programming paradigm based on *objects*, which are *abstract data structures* containing:
 - Data (attributes or member variables)
 - Procedures acting on the data (methods or member functions)
 
 ::left::
 
-<<< @/snippets/array_index_v4.py python
+<<< @/snippets/array_index_v4.py python {3|5}
 
 ::right::
 
 - `fib8` is an object (instance) of type (class) `list`
 - Data is stored internally in `fib8` (dynamic-array-like structure)
-- `index(i)` is a method of `fib8`, which is equivalent to `list.index(fib8, i)` 
+
+<v-click at=1>
+
+- `index(3)` is a method of `fib8`, which is equivalent to `list.index(fib8, 3)` 
+</v-click>
 
 ---
 layout: iframe
@@ -95,7 +101,7 @@ layout: two-cols
 
 ##  F1 champions (version 1)
 
-```py
+```py {1,2|4-11|7,8|14|17|18,19}
 # First champion in 1950
 champions = ['Farina']
 
@@ -122,11 +128,32 @@ for year, champion in zip(years,champions):
 ## &nbsp;
 
 - Use single or double quotes for string literals
+<v-click at=1>
+
 - Adding items using `append`, `insert` or `+` operator
+</v-click >
+<v-click at=2>
+
 - Duplication items using the `*` operator
+</v-click >
+<v-click at=3>
+
 - Removing items using `pop`
+</v-click >
+<v-click at=4>
+
+- Create an integer iterator using
+
+`range(start=0, stop, step=1)`
+</v-click >
+<v-click at=5>
+
 - Iterating two lists at once using `zip`
+</v-click >
+<v-click at=6>
+
 - Pretty printing using format strings
+</v-click >
 
 ---
 layout: two-cols
@@ -134,7 +161,7 @@ layout: two-cols
 
 ## F1 champions (version 2)
 
-```py
+```py {1-5|7-13|15,19|9,11|12}
 champions = [('Farina', 1950),
              ('Fangio', [1951,1954,1955,1956,1957]),
              ('Ascari', [1952,1953]),
@@ -167,9 +194,22 @@ list_champions(champions)
     - A `list` is *mutable*, a `tuple` is not
     - A `list` is more flexible than a `tuple`
     - A `tuple` is more efficient than a `list`
+<v-click  at=1>
+
 - `tuples` and `lists` can be unpacked to promote readability
+</v-click >
+<v-click  at=2>
+
 - `sort` can be customized by specifying a key function
+</v-click >
+<v-click  at=3>
+
+- `isinstance` checks the type of an object
+</v-click >
+<v-click  at=4>
+
 - `map` applies a function to all items
+</v-click >
 
 ---
 layout: two-cols
@@ -177,7 +217,7 @@ layout: two-cols
 
 ## F1 champions (version 3)
 
-```py
+```py {1-8|8-10|6-12|16-18}
 farina = {'First name' : 'Giuseppe',
           'Last name'  : 'Farina'  ,
           'Year(s)'    : 1950      ,
@@ -203,10 +243,22 @@ for champion in champions:
 ## &nbsp;
 
 - `dictionaries` store data in key-value pairs
+
+<v-click at=1>
+
 - `dictionaries` are mutable
 - a value can be accessed via its key
+</v-click>
+
+<v-click at=2>
+
 - `update` allows to add key-value pairs to a dictionary
-- `items` iterates over the key-value pairs
+</v-click>
+
+<v-click at=3>
+
+- `items()` iterates over the key-value pairs
+</v-click>
 
 ---
 layout: image-right

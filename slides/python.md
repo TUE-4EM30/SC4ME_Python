@@ -10,7 +10,7 @@ layout: image-right
 image: images/vanrossum.jpg
 ---
 
-## Timeline
+## Python's timeline
 
 - **1989** Dutchy Guido van Rossum developed Python at CWI as a
 descendant of ABC
@@ -18,7 +18,7 @@ descendant of ABC
 - **1994** Release of Python 1.0
 - **2000** Release of Python 2.0
 - **2008** Release of Python 3.0
-- **2024** Latest (stable) release: Python 3.13 
+- **2024** Latest release: Python 3.13 
 
 ---
 layout: image-right
@@ -44,7 +44,7 @@ layout: two-cols
 ### Interpreter (`python`/`ipython`)
 
 ```py {*}{lines:false}
-In [1]: print( 'Hello world!' )
+In [1]: print('Hello world!')
 'Hello world!'
 
 In [2]: a = 3
@@ -54,7 +54,7 @@ Out[3]: 3
 
 In [4]: b = 4
 
-In [5]: ( a**2 + b**2 )**0.5
+In [5]: (a**2 + b**2)**0.5
 Out[5]: 5.0
 ```
 
@@ -71,16 +71,16 @@ Out[5]: 5.0
 ### Script (`pythagoras.py`)
  
 ```py
-print( 'Hello world!' )
+print('Hello world!')
 
 a = 3
 b = 4
 
-print( (a**2 + b**2)**0.5 )
+print((a**2 + b**2)**0.5)
 ```
 
 ```console {lines:false}
-$ python pythagoras.py
+$ python3 pythagoras.py
 'Hello world!'
 5.0
 ```
@@ -131,11 +131,11 @@ a_list = [1,2,3]
 b_list = [4,5,6]
 
 for i in range(3):
-    for j in range(3):
-        a = a_list[i]
-        b = b_list[j]
-        c = math.sqrt(a**2+b**2)
-      print(f'{a}²+{b}²={c:4.3f}²')
+  for j in range(3):
+    a = a_list[i]
+    b = b_list[j]
+    c = math.sqrt(a**2+b**2)
+   print(f'{a}²+{b}²={c:4.3f}²')
 ```
 ```py
 import math
@@ -144,11 +144,11 @@ a_list = [1,2,3]
 b_list = [4,5,6]
 
 for i in range(3):
-    for j in range(3):
-        a = a_list[i]
-        b = b_list[j]
-        c = math.sqrt(a**2+b**2)
-        print(f'{a}²+{b}²={c:4.3f}²')
+  for j in range(3):
+    a = a_list[i]
+    b = b_list[j]
+    c = math.sqrt(a**2+b**2)
+    print(f'{a}²+{b}²={c:4.3f}²')
 ```
 ```py
 import math
@@ -157,9 +157,9 @@ a_list = [1,2,3]
 b_list = [4,5,6]
 
 for a in a_list:
-    for b in b_list:
-        c = math.sqrt(a**2+b**2)
-        print(f'{a}²+{b}²={c:4.3f}²')
+  for b in b_list:
+    c = math.sqrt(a**2+b**2)
+    print(f'{a}²+{b}²={c:4.3f}²')
 ```
 ```py
 import math
@@ -168,9 +168,9 @@ a_list = [1, 2, 3]
 b_list = [4, 5, 6]
 
 for a in a_list:
-    for b in b_list:
-        c = math.sqrt(a**2 + b**2)
-        print(f'{a}² + {b}² = {c:4.3f}²')
+  for b in b_list:
+    c = math.sqrt(a**2 + b**2)
+    print(f'{a}² + {b}² = {c:4.3f}²')
 ```
 ````
 

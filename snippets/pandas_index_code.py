@@ -1,9 +1,9 @@
 import pandas as pd
-# Read in the data from a csv. file
-df = pd.read_csv('data_renewables.csv') 
+# Read in the data from a .csv file
+df = pd.read_csv('renewables.csv') 
 df # Renewable energy consumption (TWh)
 
-# Add a row with the global reneable energy consumption
+# Add a row with the global renewable energy consumption
 global_row = pd.DataFrame({
     "Country": ["World"],
     "Hydro": [df["Hydro"].sum()],

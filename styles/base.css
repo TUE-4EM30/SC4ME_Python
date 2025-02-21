@@ -1,17 +1,17 @@
-.two-columns {
+.two-columns, .two-cols-header {
     display: flex;
     gap: 20px; /* Adjust the gap as needed */
 }
 
 /* Increase font size for all normal text */
-li {
+/* li {
     font-size: 1.1em;
-}
+} */
 
 /* Increase font size for all normal text */
-.line, .slidev-code-highlighted {
+/* .line, .slidev-code-highlighted {
     font-size: 1.2em;
-}
+} */
 
 
 .large-python-slide pre code {

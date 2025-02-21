@@ -58,7 +58,7 @@ class: red-background
 layout: two-cols
 ---
 
-## Popular Python libraries
+## Python libraries
 
 <v-click>
 - NumPy: Numerical computing with arrays.
@@ -147,31 +147,40 @@ layout: two-cols
 <!-- add snipped of the different libraries -->
 
 ---
-layout: default
+layout: center
+class: red-background
+hideInToc: true
 ---
 
-## Introduction of the problem to be considered
+# An example to explore some modules 
 
-<div style="width: 100%; display: flex; justify-content: center;">
-    <div style="transform: scale(0.7); transform-origin: top left; width: 125%; height: 750px; overflow: hidden;">
-        <iframe src="https://ourworldindata.org/explorers/energy?time=2023&hideControls=false&Total+or+Breakdown=Select+a+source&Energy+or+Electricity=Primary+energy&Metric=Per+capita+consumption&Select+a+source=Renewables&country=USA~GBR~CHN~OWID_WRL~IND~BRA~ZAF&tab=map" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
-    </div>
-</div>
+---
+layout: iframe
+url: https://ourworldindata.org/explorers/energy?time=2023&hideControls=false&Total+or+Breakdown=Select+a+source&Energy+or+Electricity=Primary+energy&Metric=Per+capita+consumption&Select+a+source=Renewables&country=USA~GBR~CHN~OWID_WRL~IND~BRA~ZAF&tab=map
+---
+
+<!--Data set from "Our world in data"-->
 
 ---
 
-## Introduction of the problem to be considered
+## The annual growth of wind energy
 
-- Data analysis using Pandas: 
-    - What does the data set look like?
-    - How can we alter the dataset?
+### &nbsp;
 
-- Data plotting with MatplotLib 
-    - How can we visualize the data set?
-    - Can we find a curve fit?
+### Visualize the annual wind energy production over the last 50 years and determine a trend line.
 
-- NumPy foundation
-    - How does the mathematical framework behind o.a. Pandas work?
+### &nbsp;
+
+### Steps:
+1. Reading and manipulating the data set using **Pandas**
+  - What does the data set look like?
+  - How can we alter the data set?
+2. Plotting the relevant data using **Matplotlib**
+  - How can we visualize the data set?
+  - Can we identify a trend line?
+3. Fitting a trend line using **Numpy**
+  - How does the mathematical framework behind (a.o.) Pandas work?
+  - How can we use arrays efficiently?
 
 ---
 layout: center
@@ -218,14 +227,14 @@ layout: center
 class: red-background
 ---
 
-# VSCode
+# Python & VSCode
 
 ---
+layout: iframe
+url: http://code.visualstudio.com/docs/python/python-tutorial
+---
 
-## Getting started with Python and VSCode
-
-- link to tutorial
-- tips
+<!-- Python VSCode tutorial -->
 
 ---
 
