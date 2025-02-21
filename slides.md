@@ -113,7 +113,7 @@ layout: two-cols
 </div>
 
 <div class="flex justify-center">
-  <img src="./images/pandalogo.png" alt="pandas" width="300" v-if="$slidev.nav.clicks === 2">
+  <img src="./images/Pandalogo.png" alt="pandas" width="300" v-if="$slidev.nav.clicks === 2">
 </div>
 
 <div class="flex justify-center">
