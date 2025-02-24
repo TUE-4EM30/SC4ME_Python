@@ -13,7 +13,7 @@ global_row = pd.DataFrame({
 })
 df = pd.concat([df, global_row], ignore_index=True)
 
-# Add a row of total renewable energy consumption
+# Add a column of total renewable energy consumption
 energy_sources = ["Hydro", "Nuclear", "Solar", "Wind"]
 df = df[energy_sources].sum(axis=1)
 
