@@ -245,4 +245,4 @@ class: red-background
     - Instruction set
 - Next lecture
     - Creating objects
-    - Introduction to Assignment II: Evolutionary algorithm
+    - Introduction to Assignment II
