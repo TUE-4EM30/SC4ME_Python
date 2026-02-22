@@ -89,10 +89,9 @@ hideInToc: true
 # An example to explore built-in objects 
 
 ---
-
-<div class="flex justify-center">
-  <img src="/images/f1champs.png" width="800">
-</div>
+layout: image
+image: https://cdn.shopify.com/s/files/1/0257/5181/4207/files/2024-F1_Champions_2048x2048.jpg?v=1732552243
+---
 
 ---
 layout: two-cols

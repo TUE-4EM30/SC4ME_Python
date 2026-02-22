@@ -30,10 +30,9 @@ plt.show()
 
 
 ---
-
-## The MatplotLib Gallery
-
-<iframe src="https://matplotlib.org/stable/gallery/index.html" width="100%" height="600px"></iframe>
+layout: image
+image: /images/MatplotlibGallery.png
+---
 
 ---
 layout: two-cols
